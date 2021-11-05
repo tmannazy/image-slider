@@ -8,11 +8,66 @@
 
 .container {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.slides {
+    /* padding: 2 0px; */
+    display: none;
 }
 
 .container div>img {
-    width: 500px;
-    height: 500px;
+    width: 100%;
+}
+
+
+.prev,
+.next {
+    font-size: 30px;
+    color: #79f;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+    position: absolute;
+    padding: 10px;
+    top: 40%;
+    border-radius: 7px 2px;
+    margin-left: 30px;
+}
+
+.next {
+    right: 15%;
+    border-radius: 2px 7px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: #113;
+    color: #fde;
+}
+
+.change-colors {
+    color: #113;
+    background-color: #fde;
+}
+
+.dots-container {
+    text-align: center;
+}
+
+.circle {
+    background-color: #113;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0 4px;
+    transition: background-color 100ms ease-in-out;
+    cursor: pointer;
+}
+
+.active,
+.circle:hover {
+    background-color: rgba(104, 104, 214, 0.863)
 }
