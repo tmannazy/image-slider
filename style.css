@@ -14,14 +14,12 @@
 }
 
 .slides {
-    /* padding: 2 0px; */
     display: none;
 }
 
 .container div>img {
     width: 100%;
 }
-
 
 .prev,
 .next {
