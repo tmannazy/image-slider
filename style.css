@@ -6,6 +6,14 @@
     box-sizing: border-box;
 }
 
+h1 {
+    text-align: center;
+    background-color: #113;
+    color: #fde;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -29,7 +37,7 @@
     transition: 200ms ease-in-out;
     position: absolute;
     padding: 10px;
-    top: 40%;
+    top: 55%;
     border-radius: 7px 2px;
     margin-left: 30px;
 }
