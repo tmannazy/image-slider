@@ -31,7 +31,7 @@ const changeDisplay = () => {
 };
 
 const circleDisplay = (circleNum) => {
-  slideShow(circleNum);
+  displaySlides((slideIndex = circleNum + 1));
 };
 
 nextBtn.addEventListener("click", () => {
